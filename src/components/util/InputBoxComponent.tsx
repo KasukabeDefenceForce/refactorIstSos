@@ -1,12 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Dispatch, SetStateAction } from "react";
 import "../../css/InputBoxComponent.css";
 
 interface InputBoxProps {
   label: string;
   type: string;
   value: string | number | string[];
-  setValue: Dispatch<SetStateAction<any>>;
+  setValue: any;
   required?: boolean;
 }
 

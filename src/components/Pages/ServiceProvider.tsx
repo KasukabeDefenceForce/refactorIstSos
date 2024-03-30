@@ -1,6 +1,6 @@
 import { Box } from "@mui/material"
 import { useState } from "react"
-import InputBoxComponent from "./InputBoxComponent"
+import InputBoxComponent from "../util/InputBoxComponent"
 
 const ServiceProvider = () => {
     const [name, setName] = useState('Istitute Of Earth Science - SUPSI')

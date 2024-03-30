@@ -1,6 +1,6 @@
 import { Box } from "@mui/material"
 import { useState } from "react"
-import InputBoxComponent from "./InputBoxComponent"
+import InputBoxComponent from "../util/InputBoxComponent"
 
 const Database = () => {
     const [user, setUser] = useState('postgres')
@@ -10,7 +10,7 @@ const Database = () => {
     const [dbname, setDbname] = useState("istsos")
 
     const handleClick = () => {
-        const sanitizedMessage = `
+    const sanitizedMessage = `
       Username: ${user}
       Host: ${host}
       Port: ${port}
@@ -28,13 +28,13 @@ const Database = () => {
             <div className="about">
                 <div className="floating-label">PostGIS database</div>
                 <form onSubmit={handleClick}>
-                    <InputBoxComponent label="User" type="text" setValue={(setUser)} value={user} />
+                    <InputBoxComponent label="User" type="text" setValue={setUser} value={user} />
                     <InputBoxComponent label="Password" type="password" setValue={setPassword} value={password} />
                     <InputBoxComponent label="Host" type="text" setValue={setHost} value={host} />
                     <InputBoxComponent label="Port" type="number" setValue={setPort} value={port} />
                     <InputBoxComponent label="DB name" type="text" setValue={setDbname} value={dbname} />
                     <div className="button-container">
-                                            <button className="submit-button">Submit</button>
+                        <button className="submit-button">Submit</button>
                     </div>
                 </form>
             </div>

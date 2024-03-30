@@ -9,7 +9,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import * as React from 'react';
-import logo from "../assets/istsos-logo-clear.png";
+import logo from "../../assets/istsos-logo-clear.png";
 
 const pages = ['Server', 'Services', 'Data Management'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];

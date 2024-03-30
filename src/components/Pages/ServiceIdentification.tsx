@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import { useState } from "react";
-import InputBoxComponent from "./InputBoxComponent"; // Assuming InputBoxComponent is defined elsewhere
+import InputBoxComponent from "../util/InputBoxComponent"; // Assuming InputBoxComponent is defined elsewhere
 
 const ServiceIdentification = () => {
     const [title, setTitle] = useState("IST Sensor Observation Service");

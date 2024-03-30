@@ -1,5 +1,5 @@
 import { Link } from '@mui/material';
-import about from "../assets/about_grey.svg";
+import about from "../../assets/about_grey.svg";
 const IconTray = () => {
     return (
         <div className="container-icon-tray">

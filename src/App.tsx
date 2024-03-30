@@ -1,11 +1,12 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'; // Ensure correct imports
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import IconTray from './components/IconTray.tsx';
-import Navbar from "./components/Navbar.tsx";
-import About from './components/util/About.tsx';
-import Database from './components/util/Database.tsx';
-import ServiceProvider from './components/util/ServiceProvider.tsx';
-import ServiceIdentification from './components/util/ServiceIdentification.tsx';
+import About from './components/Pages/About.tsx';
+import CoordinatesSystem from './components/Pages/CoordinatesSystem.tsx';
+import Database from './components/Pages/Database.tsx';
+import ServiceIdentification from './components/Pages/ServiceIdentification.tsx';
+import ServiceProvider from './components/Pages/ServiceProvider.tsx';
+import IconTray from './components/util/IconTray.tsx';
+import Navbar from "./components/util/Navbar.tsx";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/database" element={<Database/>} />
         <Route path="/serviceprovider" element={<ServiceProvider/>} />
         <Route path="/serviceidentification" element={<ServiceIdentification/>} />
+        <Route path="/coordinatessystem" element={<CoordinatesSystem/>} />
       </Routes>
     </BrowserRouter>
     </>
