@@ -1,54 +1,73 @@
-import about from "../assets/about_grey.svg"
+import { Link } from '@mui/material';
+import about from "../assets/about_grey.svg";
 const IconTray = () => {
     return (
         <div className="container-icon-tray">
             <div className="sub-menu-item">
-                <img src={about} />
-                <div>About IstSos</div>
+                <Link href="/about" underline="none" color="inherit">
+                    <img src={about} />
+                    <div className='sub-menu-item-label'>About IstSos</div>
+                </Link>
             </div>
             <div className="sub-menu-item">
-                <img src={about} />
-                <div>jjj</div>
+                <Link href="/status" underline="none" color="inherit">
+                    <img src={about} />
+                    <div className='sub-menu-item-label'>Status</div>
+                </Link>
             </div>
             <div className="sub-menu-item">
-                <img src={about} />
-                <div>jjj</div>
+                <Link href="/database" underline="none" color="inherit">
+                    <img src={about} />
+                    <div className='sub-menu-item-label'>Database</div>
+                </Link>
             </div>
             <div className="sub-menu-item">
-                <img src={about} />
-                <div>jjj</div>
+                <Link href="/serviceprovider" underline="none" color="inherit">
+                    <img src={about} />
+                    <div className='sub-menu-item-label'>Service Provider</div>
+                </Link>
             </div>
             <div className="sub-menu-item">
-                <img src={about} />
-                <div>jjj</div>
+                <Link href="/serviceidentification" underline="none" color="inherit">
+                    <img src={about} />
+                    <div className='sub-menu-item-label'>Service identification</div>
+                </Link>
+            </div>
+                     <div className="sub-menu-item">
+                <Link href="/coordinatessystem" underline="none" color="inherit">
+                    <img src={about} />
+                    <div className='sub-menu-item-label'>Coordinates system</div>
+                </Link>
             </div>
             <div className="sub-menu-item">
-                <img src={about} />
-                <div>jjj</div>
+                <Link href="/mqtt" underline="none" color="inherit">
+                    <img src={about} />
+                    <div className='sub-menu-item-label'>MQTT Publisher</div>
+                </Link>
+            </div>
+                     <div className="sub-menu-item">
+                <Link href="/observationconfig" underline="none" color="inherit">
+                    <img src={about} />
+                    <div className='sub-menu-item-label'>GetObservation Configuration</div>
+                </Link>
             </div>
             <div className="sub-menu-item">
-                <img src={about} />
-                <div>GetObservation Configuration</div>
+                <Link href="/proxyconfig" underline="none" color="inherit">
+                    <img src={about} />
+                    <div className='sub-menu-item-label'>Proxy Configuration</div>
+                </Link>
+            </div>
+                    <div className="sub-menu-item">
+                <Link href="/newservice" underline="none" color="inherit">
+                    <img src={about} />
+                    <div className='sub-menu-item-label'>New Service</div>
+                </Link>
             </div>
             <div className="sub-menu-item">
-                <img src={about} />
-                <div>jjj</div>
-            </div>
-            <div className="sub-menu-item">
-                <img src={about} />
-                <div>jjj</div>
-            </div>
-            <div className="sub-menu-item">
-                <img src={about} />
-                <div>jjj</div>
-            </div>
-            <div className="sub-menu-item">
-                <img src={about} />
-                <div>jjj</div>
-            </div>
-            <div className="sub-menu-item">
-                <img src={about} />
-                <div>jjj</div>
+                <Link href="/deleteservice" underline="none" color="inherit">
+                    <img src={about} />
+                    <div className='sub-menu-item-label'>Delete Service</div>
+                </Link>
             </div>
         </div>
     )
