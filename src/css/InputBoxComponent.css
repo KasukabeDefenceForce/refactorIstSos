@@ -1,0 +1,23 @@
+.input-box{
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+
+}
+
+.input-label {
+    flex: 0 0 12%;
+    font-size: 0.8rem;
+    margin: 4px;
+}
+
+.input-type{
+    flex: 1 1 auto;
+    margin: 4px;
+}
+
+.input-type input:focus{
+    outline: none;
+    border: 2px solid green;
+}
+
