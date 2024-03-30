@@ -33,7 +33,7 @@ const ServiceIdentification = () => {
                 </Box>
             </div>
             <div className="about">
-                <div className="floating-label">PostGIS database</div>
+                <div className="floating-label">Service Identification</div>
                 <form onSubmit={handleSubmit}>
                     <InputBoxComponent label="Title" type="text" setValue={setTitle} value={title} required={true}/>
                     <InputBoxComponent label="Abstract" type="text" setValue={setAbstract} value={abstract} />
